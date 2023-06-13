@@ -99,7 +99,6 @@ static const char *termcmd[]  = { "kitty", NULL };
 static const char *filemgr[]  = { "pcmanfm", NULL };
 static const char *logout[]  = { "dm-logout", NULL };
 static const char *hub[]  = { "dm-hub", NULL };
-static const char *rofi[]  = { "rofi -show run", NULL };
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -153,8 +152,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	/* { MODKEY|ShiftMask,             XK_q,      quit,           {0} }, */
 	{ MODKEY|ShiftMask,             XK_q, spawn,          {.v = logout } },
-	{ MODKEY|ShiftMask,             XK_h, spawn,          {.v = hub } },
-	{ MODKEY|ShiftMask,             XK_r, spawn,          {.v = rofi } },
+	{ MODKEY|ShiftMask,             XK_x, spawn,          {.v = hub } },
 };
 
 /* button definitions */
