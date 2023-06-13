@@ -14,8 +14,15 @@ static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows sel
 static const unsigned int systrayspacing = 2;   /* systray spacing */
 static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
 static const int showsystray             = 1;   /* 0 means no systray */
-static const char *fonts[]          = { "fontawesome:size=11" };
-static const char dmenufont[]       = "OpenSans:size=10";
+static const char *fonts[]    = {
+  "Fira Code:size=14",
+  "Vazirmatn Variable:Bold:pixelsize=20",
+  "FiraCode Nerd Font:size=14",
+  "JoyPixels:pixelsize=20",
+  "FontAwesome:pixelsize=20",
+//      "Noto Color Emoji:pixelsize=20:antialias=true:autohint=true",
+};
+static const char dmenufont[] = { "Fira Code:size=14" };
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
